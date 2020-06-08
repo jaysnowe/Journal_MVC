@@ -1,0 +1,19 @@
+
+<head>
+<script type="text" src='site.js'>
+</script>
+</head>
+<body>
+    <form method="POST" action="/entry/save">
+    @* the action says what will happen or where it goes, not where the blank form URI is *@
+        <h1>Today's Entry</h1>
+        <textarea oninput="countWords()" id="Entry" name="Entry"  rows="4" cols="50" class="entrytext" placeholder="Be kind to yourself!"></textarea>
+
+        <button type="submit" class="btn btn-warning">Count Words!</button>
+        
+    </form>
+    <p id="wcblock" style="display: block;">
+            Wordcount:
+            <span id="wordcount"></span>
+    </p>
+</body>
